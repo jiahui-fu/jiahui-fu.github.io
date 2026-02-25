@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiahui Fu.</title>
+  <meta name="description" content="Jiahui works on robots.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Jiahui FU 付佳慧</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#service">Service</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero / About -->
+    <section class="hero fade-in" id="about">
+      <div class="hero-top">
+        <div class="hero-photo">
+          <img src="profile_picture.jpg" alt="Jiahui Fu">
+        </div>
+        <div class="hero-info">
+          <h1>Jiahui FU <span class="chinese-name">付佳慧</span></h1>
+          <p class="bio">
+            I am a Research Scientist at the <a href="https://theaiinstitute.com/" target="_blank">Robotics and AI
+              Institute (RAI)</a> (formerly Boston Dynamics AI
+            Institute).
+            I received my Ph.D. from <a href="https://www.csail.mit.edu/" target="_blank">MIT CSAIL</a>
+            in 2023, advised by <a href="https://www.csail.mit.edu/person/john-leonard" target="_blank">Prof.
+              John
+              Leonard</a>. Prior to that, I obtained my M.S. from the <a href="https://umich.edu/"
+              target="_blank">University of Michigan</a> in 2018,
+            and my B.Eng. from <a href="https://www.zju.edu.cn/english/" target="_blank">Zhejiang University</a> in
+            2017.
+            I was a research intern at <a href="https://about.meta.com/realitylabs/" target="_blank">Meta Reality
+              Labs</a>, working with <a href="https://scholar.google.com/citations?user=JgTAHxkAAAAJ&hl=en"
+              target="_blank">Yuichi Taguchi</a> in
+            2021 and <a href="https://shichaoy.github.io/" target="_blank">Shichao Yang</a> in 2022.
+          </p>
+          <div class="hero-links">
+            <a href="mailto:jiahuifu@csail.mit.edu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              Email
+            </a>
+            <a href="https://scholar.google.com/citations?user=-FqjG8kAAAAJ&hl=en" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
+                <path
+                  d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z" />
+                <path d="M12 18a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" fill="none" />
+              </svg>
+              Scholar
+            </a>
+            <a href="https://x.com/jiahuifu_carol" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              Twitter
+            </a>
+            <a href="https://www.linkedin.com/in/jiahui-fu-carol" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <p class="research">
+          My research focuses on building robots that <strong>see, predict, and act</strong> by linking
+          deep spatial perception with autonomous manipulation. During my PhD, I developed
+          <strong>object-centric 3D representations</strong> and neural implicit models for
+          <strong>long-term SLAM</strong>, enabling robots to maintain persistent, object-aware
+          understanding of changing environments. Recently, I have been leveraging this spatial foundation to treat
+          <strong>video generative models</strong> as predictive <strong>world models</strong>
+          for <strong>zero-shot robotic manipulation</strong>. By grounding high-level visual
+          foresight into physical interaction, my current work develops frameworks that
+          translate generative "commonsense" into robust, closed-loop robot execution.
+        </p>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section fade-in" id="publications">
+      <h2 class="section-title">Publications <span style="font-size: 17px; font-weight: 400; color: #9e9eb0;">(* equal
+          contribution)</span></h2>
+
+      <div class="pub-list">
+
+        <div class="pub-item">
+          <img class="pub-thumb" src="images/novaplan.gif" alt="NovaPlan">
+          <div class="pub-content">
+            <div class="pub-title">NovaPlan: Zero-Shot Long-Horizon Manipulation via Closed-Loop Video Language Planning
+            </div>
+            <div class="pub-authors"> <span class="me">Jiahui Fu</span>*, <a
+                href="https://scholar.google.com/citations?user=Cvn7Y5YAAAAJ&hl=en" target="_blank">Junyu
+                Nan*</a>, <a href="https://lingfeng.moe/" target="_blank">Lingfeng Sun*</a>,
+              <a href="https://lhy.xyz/" target="_blank">Hongyu Li*</a>, <a
+                href="https://scholar.google.com/citations?user=o67NTxYAAAAJ&hl=en" target="_blank">Jianing
+                Qian</a> , <a href="https://www.linkedin.com/in/jennifer-barry-742a0799/" target="_blank">Jennifer
+                Barry</a>, <a href="https://kriskitani.github.io/" target="_blank">Kris
+                Kitani</a>, <a href="https://cs.brown.edu/people/gdk/" target="_blank">George
+                Konidaris</a>
+            </div>
+            <div class="pub-links">
+              <span class="venue-label">arXiv Preprint</span> <span class="sep">/</span>
+              <a href="https://arxiv.org/pdf/2602.20119" target="_blank">Paper</a><span class="sep">/</span>
+              <a href="https://nova-plan.github.io/" target="_blank">Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <img class="pub-thumb" src="images/novaflow.gif" alt="NovaFlow">
+          <div class="pub-content">
+            <div class="pub-title">NovaFlow: Zero‑Shot Manipulation via Actionable Flow from Generated Videos</div>
+            <div class="pub-authors"><a href="https://lhy.xyz/" target="_blank">Hongyu Li</a>*, <a
+                href="https://lingfeng.moe/" target="_blank">Lingfeng Sun</a>*, <a href="https://jeffreyyh.github.io/"
+                target="_blank">Yafei Hu</a>, <a href="https://www.linkedin.com/in/duynguyen-ta/" target="_blank">Duy
+                Ta</a>, <a href="https://www.linkedin.com/in/jennifer-barry-742a0799/" target="_blank">Jennifer
+                Barry</a>, <a href="https://cs.brown.edu/people/gdk/" target="_blank">George Konidaris</a>,
+              <span class="me">Jiahui Fu</span>
+            </div>
+            <div class="pub-links">
+              <span class="venue-label">ICRA 2026</span> <span class="sep">/</span>
+              <a href="https://arxiv.org/abs/2510.08568" target="_blank">Paper</a><span class="sep">/</span>
+              <a href="https://novaflow.lhy.xyz/" target="_blank">Website</a> <span class="sep">/</span>
+              <a href="https://github.com/bdaiinstitute/NovaFlow" target="_blank">Code</a> <span class="sep">/</span>
+              <a href="https://youtu.be/N7I5TosoAeI?si=vWkUWCiOQ1Pac6kW" target="_blank">Podcast @ RoboPapers</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <img class="pub-thumb" src="images/IJRR_2025.gif" alt="NeuSE IJRR">
+          <div class="pub-content">
+            <div class="pub-title">NeuSE: Neural SE(3)‑Equivariant Embedding for Long‑Term Object‑based SLAM</div>
+            <div class="pub-authors"><span class="me">Jiahui Fu</span>, <a href="https://yilundu.github.io"
+                target="_blank">Yilun Du</a>, <a href="https://www.linkedin.com/in/kurran-singh/" target="_blank">Kurran
+                Singh</a>, <a href="https://web.mit.edu/cocosci/josh.html" target="_blank">Joshua
+                B. Tenenbaum</a>,
+              <a href="https://www.csail.mit.edu/person/john-leonard" target="_blank">John J. Leonard</a>
+            </div>
+            <div class="pub-links">
+              <span class="venue-label">IJRR 2025</span><span class="sep">/</span>
+              <a href="https://journals.sagepub.com/doi/epub/10.1177/02783649251355966" target="_blank">Paper</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <img class="pub-thumb" src="images/RSS_2023.gif" alt="NeuSE RSS">
+          <div class="pub-content">
+            <div class="pub-title">NeuSE: Neural SE(3)‑Equivariant Embedding for Consistent Spatial Understanding with
+              Objects</div>
+            <div class="pub-authors"><span class="me">Jiahui Fu</span>, <a href="https://yilundu.github.io"
+                target="_blank">Yilun Du</a>, <a href="https://www.linkedin.com/in/kurran-singh/" target="_blank">Kurran
+                Singh</a>, <a href="https://web.mit.edu/cocosci/josh.html" target="_blank">Joshua
+                B. Tenenbaum</a>,
+              <a href="https://www.csail.mit.edu/person/john-leonard" target="_blank">John J. Leonard</a>
+            </div>
+            <div class="pub-links">
+              <span class="venue-label">RSS 2023</span> <span class="sep">/</span>
+              <a href="https://arxiv.org/abs/2303.07308" target="_blank">Paper</a> <span class="sep">/</span>
+              <a href="https://neuse-slam.github.io/neuse/" target="_blank">Website</a>
+              <br>
+              <span class="award">🏆 Best Paper Award, ICRA 2023 Workshop on Effective Representations, Abstractions,
+                and Priors for Robot Learning (RAP4Robots)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <img class="pub-thumb" src="images/IROS_2022.png" alt="NDF Change Detection">
+          <div class="pub-content">
+            <div class="pub-title">Robust Change Detection based on Neural Descriptor Fields</div>
+            <div class="pub-authors"><span class="me">Jiahui Fu</span>, <a href="https://yilundu.github.io"
+                target="_blank">Yilun Du</a>, <a href="https://www.linkedin.com/in/kurran-singh/" target="_blank">Kurran
+                Singh</a>, <a href="https://web.mit.edu/cocosci/josh.html" target="_blank">Joshua
+                B. Tenenbaum</a>, <a href="https://www.csail.mit.edu/person/john-leonard" target="_blank">John J.
+                Leonard</a></div>
+            <div class="pub-links">
+              <span class="venue-label">IROS 2022</span> <span class="sep">/</span>
+              <a href="https://arxiv.org/abs/2208.01014" target="_blank">Paper</a> <span class="sep">/</span>
+              <a href="https://yilundu.github.io/ndf_change/" target="_blank">Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <img class="pub-thumb" src="images/PlaneSDF.gif" alt="PlaneSDF">
+          <div class="pub-content">
+            <div class="pub-title">PlaneSDF‑Based Change Detection for Long‑Term Dense Mapping</div>
+            <div class="pub-authors"><span class="me">Jiahui Fu</span>, <a
+                href="https://scholar.google.com/citations?user=Cu-y7ngAAAAJ&hl=en" target="_blank">Chengyuan Lin</a>,
+              <a href="https://scholar.google.com/citations?user=JgTAHxkAAAAJ&hl=en" target="_blank">Yuichi Taguchi</a>,
+              <a href="https://scholar.google.com/citations?user=B0t1AJ4AAAAJ&hl=en" target="_blank">Andrea Cohen</a>,
+              <a href="https://www.linkedin.com/in/yifu-zhang-9631aa13/" target="_blank">Yifu Zhang</a>, <a
+                href="https://www.linkedin.com/in/mylabathula/" target="_blank">Stephen Mylabathula</a>, <a
+                href="https://www.csail.mit.edu/person/john-leonard" target="_blank">John J. Leonard</a>
+            </div>
+            <div class="pub-links">
+              <span class="venue-label">RA‑L &amp; IROS 2022</span> <span class="sep">/</span>
+              <a href="https://arxiv.org/abs/2207.08323" target="_blank">Paper</a><span class="sep">/</span>
+              <a href="https://www.youtube.com/watch?v=oh-MQPWTwZI" target="_blank">Video</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <img class="pub-thumb" src="images/IROS_2021.gif" alt="Multi-Hypothesis">
+          <div class="pub-content">
+            <div class="pub-title">A Multi‑Hypothesis Approach to Pose Ambiguity in Object‑Based SLAM</div>
+            <div class="pub-authors"><span class="me">Jiahui Fu</span>, <a href="https://qq-huang.github.io/"
+                target="_blank">Qiangqiang Huang</a>, <a href="https://people.csail.mit.edu/kdoherty/"
+                target="_blank">Kevin Doherty</a>, <a href="https://yuewang.xyz/" target="_blank">Yue Wang</a>, <a
+                href="https://www.csail.mit.edu/person/john-leonard" target="_blank">John J. Leonard</a></div>
+            <div class="pub-links">
+              <span class="venue-label">IROS 2021</span> <span class="sep">/</span>
+              <a href="https://arxiv.org/abs/2108.01225" target="_blank">Paper</a><span class="sep">/</span>
+              <a href="https://www.youtube.com/watch?v=O3wzdGToh-8" target="_blank">Video</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Earlier Work -->
+      <button class="earlier-work-toggle" id="earlier-toggle" onclick="toggleEarlierWork()">
+        Earlier Work (pre‑2018) <span class="arrow">▼</span>
+      </button>
+      <div class="earlier-work" id="earlier-work">
+        <p style="font-size: 15.5px; color: var(--text-muted); margin-top: 14px; margin-bottom: 14px;">
+          During my undergrad, I also worked on battery control and smart grid optimization. Feel free to check them
+          out!
+        </p>
+        <div class="pub-list">
+          <div class="pub-item">
+            <img class="pub-thumb" src="images/applied_energy.png" alt="VRFB">
+            <div class="pub-content">
+              <div class="pub-title">Dynamic Control Strategy for the Electrolyte Flow Rate of Vanadium Redox Flow
+                Batteries</div>
+              <div class="pub-authors">Tao Wang, <span class="me">Jiahui Fu</span>, Menglian Zheng, Zitao Yu</div>
+              <div class="pub-links">
+                <span class="venue-label">Applied Energy 2018</span> <span class="sep">/</span>
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306261917309376?via%3Dihub"
+                  target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+          <div class="pub-item">
+            <img class="pub-thumb" src="images/journal_energy_engieering.png" alt="VRFB Optimization">
+            <div class="pub-content">
+              <div class="pub-title">Flow‑Rate Optimization and Economic Analysis of VRFBs in a Load‑Shifting
+                Application</div>
+              <div class="pub-authors"><span class="me">Jiahui Fu</span>, Menglian Zheng, Xinhao Wang, Jie Sun, Tao Wang
+              </div>
+              <div class="pub-links">
+                <span class="venue-label">Journal of Energy Engineering 2017</span> <span class="sep">/</span>
+                <a href="https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29EY.1943-7897.0000493"
+                  target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+          <div class="pub-item">
+            <img class="pub-thumb" src="images/icae_2016.png" alt="VRFB Dynamic">
+            <div class="pub-content">
+              <div class="pub-title">Dynamic Flow Rate Control for Vanadium Redox Flow Batteries</div>
+              <div class="pub-authors"><span class="me">Jiahui Fu</span>, Tao Wang, Xinhao Wang, Jie Sun, Menglian Zheng
+              </div>
+              <div class="pub-links">
+                <span class="venue-label">International Conference on Applied Energy 2016</span><span
+                  class="sep">/</span>
+                <a href="https://www.sciencedirect.com/science/article/pii/S1876610217310536" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service -->
+    <section class="section fade-in" id="service">
+      <h2 class="section-title">Service</h2>
+      <div class="service-section">
+        <h3>Reviewer</h3>
+        <ul class="service-list">
+          <li><em>International Journal of Robotics Research (IJRR)</em></li>
+          <li><em>IEEE Robotics and Automation Letters (RA‑L)</em></li>
+          <li>Robotics: Science and Systems (RSS)</li>
+          <li>IEEE International Conference on Robotics and Automation (ICRA)</li>
+          <li>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</li>
+          <li>Conference on Robot Learning (CoRL)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Teaching -->
+    <section class="section fade-in" id="teaching">
+      <h2 class="section-title">Teaching</h2>
+
+      <div class="teaching-grid">
+        <div class="teaching-item">
+          <div class="teaching-course">16.002 Unified Engineering: Signals and Systems</div>
+          <div class="teaching-meta">Teaching Assistant · MIT · Fall 2021
+          </div>
+        </div>
+        <div class="teaching-item">
+          <div class="teaching-course">2.678 Electronics for Mechanical Systems</div>
+          <div class="teaching-meta">Teaching Assistant · MIT · Spring 2019
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div style="max-width: var(--max-w); margin: 0 auto; padding: 0 24px;">
+      © 2026 Jiahui Fu
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+    document.querySelectorAll('#nav-links a').forEach(a =>
+      a.addEventListener('click', () => document.getElementById('nav-links').classList.remove('open'))
+    );
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10);
+    });
+    function toggleEarlierWork() {
+      document.getElementById('earlier-toggle').classList.toggle('open');
+      document.getElementById('earlier-work').classList.toggle('open');
+    }
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+  </script>
+
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jiahui Fu.</title>
+  <title>hey it's Jiahui Fu.</title>
   <meta name="description" content="Jiahui works on robots.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -368,6 +368,19 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.08 });
     document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+    // Typewriter effect for browser tab title
+    const titleText = "hey it's Jiahui Fu.";
+    document.title = "\u200B"; // Prevent browser from showing URL when empty
+    let titleIndex = 0;
+    function typeTitle() {
+      document.title = titleText.substring(0, titleIndex + 1);
+      titleIndex++;
+      if (titleIndex < titleText.length) {
+        setTimeout(typeTitle, 50);
+      }
+    }
+    setTimeout(typeTitle, 100);
   </script>
 
 </body>

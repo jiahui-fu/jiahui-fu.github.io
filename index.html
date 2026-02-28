@@ -372,18 +372,20 @@
     }, { threshold: 0.08 });
     document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 
-    // Typewriter effect for browser tab title
-    const titleText = "hey it's Jiahui Fu.";
-    document.title = "\u200B"; // Prevent browser from showing URL when empty
-    let titleIndex = 0;
-    function typeTitle() {
-      document.title = titleText.substring(0, titleIndex + 1);
-      titleIndex++;
-      if (titleIndex < titleText.length) {
-        setTimeout(typeTitle, 50);
+    // Typewriter effect for browser tab title (skip for search bots)
+    if (!/bot|crawl|spider|slurp|googlebot|bingbot/i.test(navigator.userAgent)) {
+      const titleText = "hey it's Jiahui Fu.";
+      document.title = "\u200B";
+      let titleIndex = 0;
+      function typeTitle() {
+        document.title = titleText.substring(0, titleIndex + 1);
+        titleIndex++;
+        if (titleIndex < titleText.length) {
+          setTimeout(typeTitle, 50);
+        }
       }
+      setTimeout(typeTitle, 100);
     }
-    setTimeout(typeTitle, 100);
   </script>
 
 </body>

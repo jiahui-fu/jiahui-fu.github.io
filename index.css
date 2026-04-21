@@ -282,7 +282,7 @@ main {
 .pub-item {
   display: flex;
   gap: 22px;
-  align-items: flex-start;
+  align-items: center;
   padding: 18px 0;
   border-bottom: 1px solid var(--border);
   transition: all var(--transition);

@@ -36,7 +36,7 @@
   <main>
 
     <!-- Hero / About -->
-    <section class="hero fade-in" id="about">
+    <section class="hero" id="about">
       <div class="hero-top">
         <div class="hero-photo">
           <img src="profile_picture.jpg" alt="Jiahui Fu">
@@ -117,7 +117,7 @@
     </section>
 
     <!-- Publications -->
-    <section class="section fade-in" id="publications">
+    <section class="section" id="publications">
       <h2 class="section-title">Publications <span style="font-size: 17px; font-weight: 400; color: #9e9eb0;">(* equal
           contribution)</span></h2>
 
@@ -369,7 +369,7 @@
     </section>
 
     <!-- Service -->
-    <section class="section fade-in" id="service">
+    <section class="section" id="service">
       <h2 class="section-title">Service</h2>
       <div class="service-section">
         <h3>Reviewer</h3>
@@ -385,7 +385,7 @@
     </section>
 
     <!-- Teaching -->
-    <section class="section fade-in" id="teaching">
+    <section class="section" id="teaching">
       <h2 class="section-title">Teaching</h2>
 
       <div class="teaching-grid">
@@ -425,11 +425,6 @@
       document.getElementById('earlier-toggle').classList.toggle('open');
       document.getElementById('earlier-work').classList.toggle('open');
     }
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
-
     // Typewriter effect for browser tab title (skip for search bots)
     if (!/bot|crawl|spider|slurp|googlebot|bingbot/i.test(navigator.userAgent)) {
       const titleText = "hey it's Jiahui Fu.";

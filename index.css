@@ -571,18 +571,6 @@ footer {
   color: var(--text-muted);
 }
 
-/* ===== Animations ===== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 0.45s ease, transform 0.45s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .hero {

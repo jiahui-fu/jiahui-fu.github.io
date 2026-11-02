@@ -247,6 +247,23 @@ main {
   height: 15px;
 }
 
+/* ===== Internship Notice ===== */
+.internship-notice {
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.internship-notice a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* ===== Sections ===== */
 .section {
   padding: 36px 0;
